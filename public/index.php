@@ -58,3 +58,6 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
+
+# sassをcssに変える
+SassCompiler::run("scss/", "css/");

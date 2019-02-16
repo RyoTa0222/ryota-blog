@@ -14,6 +14,7 @@ class ArrayController extends Controller
                 "id" => 1,
                 "title" => "Matsumoto",
                 "link_name" => "http://aaa.com",
+                "images" => "/images/dammy_1.png",
 
                 "description" => "Lorem ipsum dolor sit amet, 
                 consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
@@ -30,6 +31,7 @@ class ArrayController extends Controller
                 "id" => 2,
                 "title" => "Ryota",
                 "link_name" => "http://bbb.com",
+                "images" => "/images/dammy_2.png",
 
                 "description" => "A wonderful serenity has taken possession of my entire soul, 
                 like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, 
@@ -40,6 +42,7 @@ class ArrayController extends Controller
                 "id" => 3,
                 "title" =>"Laravel",
                 "link_name" => "http://ccc.com",
+                "images" => "/images/dammy_3.jpg",
 
                 "description" => "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. 
                 Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.
@@ -64,6 +67,7 @@ class ArrayController extends Controller
                 "id" => 1,
                 "title" => "Matsumoto",
                 "link_name" => "http://aaa.com",
+                "images" => "/images/dammy_1.png",
 
                 "description" => "Lorem ipsum dolor sit amet, 
                 consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
@@ -80,6 +84,7 @@ class ArrayController extends Controller
                 "id" => 2,
                 "title" => "Ryota",
                 "link_name" => "http://bbb.com",
+                "images" => "/images/dammy_2.png",
 
                 "description" => "A wonderful serenity has taken possession of my entire soul, 
                 like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, 
@@ -90,6 +95,7 @@ class ArrayController extends Controller
                 "id" => 3,
                 "title" =>"Laravel",
                 "link_name" => "http://ccc.com",
+                "images" => "/images/dammy_3.jpg",
 
                 "description" => "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. 
                 Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.
@@ -117,6 +123,8 @@ class ArrayController extends Controller
         }
         return view('view.index' ,compact('category_array','keyword'));   
     }
+
+
     public function detail($id){
 
         #カテゴリの内容
@@ -125,6 +133,7 @@ class ArrayController extends Controller
                 "id" => 1,
                 "title" => "Matsumoto",
                 "link_name" => "http://aaa.com",
+                "images" => "/images/dammy_1.png",
 
                 "description" => "Lorem ipsum dolor sit amet, 
                 consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
@@ -141,6 +150,7 @@ class ArrayController extends Controller
                 "id" => 2,
                 "title" => "Ryota",
                 "link_name" => "http://bbb.com",
+                "images" => "/images/dammy_2.png",
 
                 "description" => "A wonderful serenity has taken possession of my entire soul, 
                 like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, 
@@ -151,6 +161,7 @@ class ArrayController extends Controller
                 "id" => 3,
                 "title" =>"Laravel",
                 "link_name" => "http://ccc.com",
+                "images" => "/images/dammy_3.jpg",
 
                 "description" => "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. 
                 Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.
