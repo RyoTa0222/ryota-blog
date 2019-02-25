@@ -10,7 +10,7 @@
     </div>
     <div class="section white">
         <div class="container">
-            <a href="/view/{{$item['id']}}" class="category-text">
+            <a href="/id={{$item['id']}}" class="category-text">
             {{$item["title"]}}</a>
             <a href="{{$item["link_name"]}}">{{$item["link_name"]}}</a>
             <p>

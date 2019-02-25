@@ -10,10 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('view','ArrayController@index');
 
-Route::get('view/search','ArrayController@search');
-Route::get('view/{id}', 'ArrayController@detail');
+
+// ファーストページのルーティング
+Route::get('/', 'ArrayController@index');
+
+Route::get('/search','ArrayController@search');
+Route::get('/id={id}', 'ArrayController@detail');
