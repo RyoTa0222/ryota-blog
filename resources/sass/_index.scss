@@ -8,9 +8,29 @@
     text-decoration: none;
 }
 .parallax-container{
-    height: 52vw !important;
+    height: 80vh !important;
+    .effect-blur-thumb{
+        // transition: all 0.3s ease;
+        // width: 100%;
+        &:hover{
+            // /* ホバー時にボカシと明るさを調整する */
+            // filter: blur(8px) brightness(1.5);
+            // /* 境界線の見栄えを改善するために拡大も入れておく */
+            // transform: scale(1.1);
+        }
+    }
 }
-
+.content-link{
+    display: block;
+    color: black;
+    &:hover{
+        color: black;
+        text-decoration: none;
+    }
+    h2{
+        margin: 1rem 0;
+    }
+}
 
 
 

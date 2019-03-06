@@ -2,7 +2,7 @@
 <html lang="jp">
   <head>
     <meta charset="utf-8">
-    <title>google</title>
+    <title>blog</title>
     <meta name="description" content="laravelの検索結果">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{mix('css/app.css')}}" rel="stylesheet" type="text/css">
@@ -60,6 +60,11 @@
     <form action="/" method="get" class="btn-container">
       <button type="submit" name="" value="リセット" class="btn waves-effect waves-light btn-detail">リセット</button>
     </form>
+    <div>
+      
+        <button class="bubbly-button"><i class="fab fa-twitter"></i></button>
+      
+    </div>
     <p class="search-result">検索内容：
       @if(empty($keyword))
       <span></span>
@@ -87,5 +92,24 @@
         $('.sidenav').sidenav();
       });
     </script>
+    <script>
+    var animateButton = function(e) {
+
+  e.preventDefault;
+  //reset animation
+  e.target.classList.remove('animate');
+  
+  e.target.classList.add('animate');
+  setTimeout(function(){
+    e.target.classList.remove('animate');
+  },700);
+};
+
+var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+for (var i = 0; i < bubblyButtons.length; i++) {
+  bubblyButtons[i].addEventListener('click', animateButton, false);
+}
+</script>
   </body>
 </html>
